@@ -5,7 +5,7 @@ import pandas as pd
 import streamlit as st
 
 ROOT = Path(__file__).resolve().parent
-bundle = joblib.load(ROOT / "models" / "best_model.joblib")
+bundle = joblib.load(ROOT / "best_model.joblib")
 model = bundle["model"]
 st.set_page_config(page_title="Flight Fare Estimator", page_icon="✈️", layout="centered")
 st.title("✈️ Airline Ticket Price Estimator")
